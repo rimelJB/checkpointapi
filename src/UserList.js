@@ -14,7 +14,7 @@ const UserList = () => {
     <div className="profile">
       {list.map((user) => {
           return(
-    <div>
+    <div key={user.id}>
      <div className="card" style={{ width: "18em",
      margin: "20px",
      height: "11rem"}}>
@@ -22,7 +22,7 @@ const UserList = () => {
         <h6> {user.name}</h6>
      </div>
      <ul className="list-group list-group-flush">
-        <li className="list-group-item" key={user.id}>{user.email}</li>
+        <li className="list-group-item" >{user.email}</li>
         <li className="list-group-item">{user.phone}</li>
         <li className="list-group-item">{user.website}</li>
     </ul>
