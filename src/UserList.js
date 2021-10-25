@@ -11,13 +11,17 @@ const UserList = () => {
       .catch((error) => console.log(error));
   }, []);
   return (
+    <div>
+    <div className="users">
+      <h2 style={{color:"violet"}}>Users Profile</h2>
     <div className="profile">
       {list.map((user) => {
           return(
     <div key={user.id}>
      <div className="card" style={{ width: "18em",
      margin: "20px",
-     height: "11rem"}}>
+     height: "11rem",
+     border:"solid 0.25em violet"}}>
      <div className="card-header">
         <h6> {user.name}</h6>
      </div>
@@ -30,11 +34,9 @@ const UserList = () => {
     </div>
         );
       })}
-         
+      </div>   
+    </div>
     </div>
   );
 };
-
-
-  
 export default UserList;

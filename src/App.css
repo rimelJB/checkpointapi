@@ -15,10 +15,14 @@
     transform: rotate(360deg);
   }
 }
-.profile{
+.users,.profile{
   display: flex;
   height: 600px;
   flex-wrap: wrap;
   align-content: space-around;
-  margin-top: 60px;
+  margin-top: 5%;
+  justify-content: center;
+}
+h2 {
+  text-decoration: underline;
 }
